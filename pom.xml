@@ -30,7 +30,7 @@
 		<ant.version>1.6.5</ant.version>
 		<junit.version>4.1</junit.version>
 		<jain-sip-api.version>1.2</jain-sip-api.version>
-		<jain-sip-ri.version>1.2.108</jain-sip-ri.version>
+		<jain-sip-ri.version>1.2.122-SNAPSHOT</jain-sip-ri.version>
 		<jain-mgcp.version>1.0</jain-mgcp.version>
 		
 
