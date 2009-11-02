@@ -32,7 +32,7 @@
 		<jain-sip-api.version>1.2</jain-sip-api.version>
 		<jain-sip-ri.version>1.2.122-SNAPSHOT</jain-sip-ri.version>
 		<jain-mgcp.version>1.0</jain-mgcp.version>
-		
+		<servlet-api.version>2.4</servlet-api.version>
 
 		<!--
 		<commons-lang.version>2.1</commons-lang.version>	
@@ -186,6 +186,12 @@
 			<version>${jain-sip-ri.version}</version>
 		</dependency>
 		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${servlet-api.version}</version>
+		</dependency>
+		
 		<!--
 		<dependency>
 			<groupId>commons-jxpath</groupId>
@@ -233,31 +239,7 @@
 		</dependency>
 		
 		
-		<dependency>
-			<groupId>org.mobicents.external.freetts</groupId>
-			<artifactId>cmu_time_awb</artifactId>
-			<version>${freetts.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mobicents.external.freetts</groupId>
-			<artifactId>cmu_us_kal</artifactId>
-			<version>${freetts.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mobicents.external.freetts</groupId>
-			<artifactId>cmudict04</artifactId>
-			<version>${freetts.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mobicents.external.freetts</groupId>
-			<artifactId>cmulex</artifactId>
-			<version>${freetts.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mobicents.external.freetts</groupId>
-			<artifactId>cmutimelex</artifactId>
-			<version>${freetts.version}</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
@@ -334,16 +316,6 @@
 			<groupId>org.drools</groupId>
 			<artifactId>drools-decisiontables</artifactId>
 			<version>${drools.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mobicents.external.freetts</groupId>
-			<artifactId>en_us</artifactId>
-			<version>${freetts.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mobicents.external.freetts</groupId>
-			<artifactId>freetts</artifactId>
-			<version>${freetts.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.gwt</groupId>
