@@ -216,11 +216,7 @@
     	</dependency>
     	
     	<!-- Commons logging seem to have no affect  -->
-    	<dependency>
-				<groupId>log4j</groupId>
-				<artifactId>log4j</artifactId>
-				<version>${log4j.version}</version>
-		</dependency>
+    
 		<!--
 		<dependency>
 			<groupId>commons-jxpath</groupId>
