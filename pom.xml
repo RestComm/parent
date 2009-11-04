@@ -25,10 +25,11 @@
 	<properties>		
 		<!-- dependency versions -->
 		<jboss.version>5.1.0.GA</jboss.version>
+		<junit.version>4.1</junit.version>
+		
 		<jain-slee.version>1.1</jain-slee.version>
 		<commons-pool.version>1.4</commons-pool.version>
 		<ant.version>1.6.5</ant.version>
-		<junit.version>4.1</junit.version>
 		<jain-sip-api.version>1.2</jain-sip-api.version>
 		<jain-sip-ri.version>1.2.122-SNAPSHOT</jain-sip-ri.version>
 		<jain-mgcp.version>1.0</jain-mgcp.version>
@@ -36,9 +37,9 @@
 		<rome.version>0.9</rome.version>
 		<commons.httpclient.version>3.1</commons.httpclient.version>
 		<jdom.version>1.0</jdom.version>
-		<log4j.version>1.2.9</log4j.version>
-
-
+		<xmlpull.version>1.1.3.4d_b4_min</xmlpull.version>
+		<jzlib.version>1.0.7</jzlib.version>
+		
 		<!--
 		<commons-lang.version>2.1</commons-lang.version>	
 		<gwt-user.version>1.4.62</gwt-user.version>
@@ -51,8 +52,7 @@
 		<servlet-api.version>2.4</servlet-api.version>
 		<commons.httpclient.version>3.1</commons.httpclient.version>		
 		<commons.codec.version>1.2</commons.codec.version>
-		<xmlpull.version>1.1.3.4d_b4_min</xmlpull.version>
-		<jzlib.version>1.0.7</jzlib.version>
+		
 		<rome.version>0.9</rome.version>		
 		<jdom.version>1.0</jdom.version>
 		<drools.version>3.0.5</drools.version>
@@ -106,6 +106,11 @@
 		<manifest.implementation.title>${pom.groupId}:${pom.artifactId}</manifest.implementation.title>
 		<manifest.implementation.version>${pom.version}</manifest.implementation.version>
 		<manifest.implementation.vendor>JBoss, a Red Hat division</manifest.implementation.vendor>
+		
+		<!-- default versions for mobicents maven plugins -->
+		<mobicents.tools.mavenplugin.du.version>2.0.0.BETA2</mobicents.tools.mavenplugin.du.version>
+		<mobicents.tools.mavenplugin.library.version>1.0.0.BETA1</mobicents.tools.mavenplugin.library.version>
+		<mobicents.tools.mavenplugin.eclipse.version>1.0.0.BETA2</mobicents.tools.mavenplugin.eclipse.version>
 		
 	</properties>
 
@@ -631,6 +636,33 @@
 	</profiles>
 	
 	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>2.2-beta-4</version>
+				</plugin>
+				<plugin>
+					<groupId>org.mobicents.tools</groupId>
+					<artifactId>maven-du-plugin</artifactId>
+					<version>${mobicents.tools.mavenplugin.du.version}</version>
+					<extensions>true</extensions>
+				</plugin>
+				<plugin>
+					<groupId>org.mobicents.tools</groupId>
+					<artifactId>maven-eclipse-plugin</artifactId>
+					<version>${mobicents.tools.mavenplugin.eclipse.version}</version>
+					<extensions>true</extensions>
+				</plugin>
+				<plugin>
+					<groupId>org.mobicents.tools</groupId>
+					<artifactId>maven-library-plugin</artifactId>
+					<version>${mobicents.tools.mavenplugin.library.version}</version>
+					<extensions>true</extensions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
