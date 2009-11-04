@@ -39,7 +39,7 @@
 		<jdom.version>1.0</jdom.version>
 		<xmlpull.version>1.1.3.4d_b4_min</xmlpull.version>
 		<jzlib.version>1.0.7</jzlib.version>
-		
+		<smpp.version>0.3.7</smpp.version>
 		<!--
 		<commons-lang.version>2.1</commons-lang.version>	
 		<gwt-user.version>1.4.62</gwt-user.version>
@@ -63,7 +63,7 @@
 		<commons-jci-eclipse.version>${commons-jci-core.version}</commons-jci-eclipse.version>
 		<asterisk.version>0.3.1</asterisk.version>
 		<diameter.version>0.9.6.2</diameter.version>
-		<smpp.version>0.3.7</smpp.version>
+		
 		<freetts.version>1.0</freetts.version>		
 		<hibernate-core.version>3.2.6.ga</hibernate-core.version>
 		<hibernate-tools.version>3.2.0.ga</hibernate-tools.version>
@@ -220,6 +220,12 @@
       		<version>${jdom.version}</version>
     	</dependency>
     	
+    	<dependency>
+			<groupId>ie.omk</groupId>
+			<artifactId>smppapi</artifactId>
+			<version>${smpp.version}</version>
+		</dependency>
+		
     	<!-- Commons logging seem to have no affect  -->
     
 		<!--
@@ -502,11 +508,7 @@
 		</dependency>
 		
 		
-		<dependency>
-			<groupId>ie.omk</groupId>
-			<artifactId>smppapi</artifactId>
-			<version>${smpp.version}</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>antlr</groupId>
 			<artifactId>stringtemplate</artifactId>
