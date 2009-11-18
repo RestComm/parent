@@ -31,7 +31,7 @@
 		<commons-pool.version>1.4</commons-pool.version>
 		<ant.version>1.6.5</ant.version>
 		<jain-sip-api.version>1.2</jain-sip-api.version>
-		<jain-sip-ri.version>1.2.131-SNAPSHOT</jain-sip-ri.version>
+		<jain-sip-ri.version>1.2.132-SNAPSHOT</jain-sip-ri.version>
 		<jain-mgcp.version>1.0</jain-mgcp.version>
 		<servlet-api.version>2.4</servlet-api.version>
 		<rome.version>0.9</rome.version>
