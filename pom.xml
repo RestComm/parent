@@ -40,6 +40,13 @@
 		<xmlpull.version>1.1.3.4d_b4_min</xmlpull.version>
 		<jzlib.version>1.0.7</jzlib.version>
 		<smpp.version>0.3.7</smpp.version>
+		
+		<!-- SEAM -->
+		<jboss-seam.version>2.2.0.GA</jboss-seam.version>
+		<jboss-el.version>1.0_02.CR5</jboss-el.version>	
+		<hibernate-search.version>3.0.1.GA</hibernate-search.version>
+		<jbpm.version>3.2.1</jbpm.version>
+		<jsf-facelets.version>1.1.15.B1</jsf-facelets.version>
 		<!--
 		<commons-lang.version>2.1</commons-lang.version>	
 		<gwt-user.version>1.4.62</gwt-user.version>
@@ -226,6 +233,48 @@
 			<version>${smpp.version}</version>
 		</dependency>
 		
+		<!-- SEAM and converged demo -->
+		<dependency>
+    		<groupId>org.jboss.seam</groupId>
+  			<artifactId>jboss-el</artifactId>
+    		<version>${jboss-el.version}</version>
+    	</dependency>
+		<dependency>
+      		<groupId>org.jboss.seam</groupId>
+      		<artifactId>jboss-seam</artifactId>
+      		<version>${jboss-seam.version}</version>
+    	</dependency>
+    	<dependency>
+         	<groupId>org.hibernate</groupId>
+    		<artifactId>hibernate-search</artifactId>
+    		<version>${hibernate-search.version}</version>
+        </dependency>
+         <dependency>
+    		<groupId>org.jbpm</groupId>
+			<artifactId>jbpm-jpdl</artifactId>
+    		<version>${jbpm.version}</version>
+    	</dependency>
+    	<dependency>
+			<groupId>org.jboss.seam</groupId>
+			<artifactId>jboss-seam-debug</artifactId>
+			<version>${jboss-seam.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.seam</groupId>
+			<artifactId>jboss-seam-ui</artifactId>
+			<version>${jboss-seam.version}</version>
+		</dependency>
+		<dependency>
+			<groupId> com.sun.facelets</groupId>
+			<artifactId> jsf-facelets</artifactId>
+  			<version>${jsf-facelets.version}</version>
+		</dependency>
+		<dependency>
+      		<groupId>org.jboss.seam</groupId>
+      		<artifactId>jboss-seam</artifactId>
+      		<version>${jboss-seam.version}</version>
+      		<type>ejb</type>
+    	</dependency>
     	<!-- Commons logging seem to have no affect  -->
     
 		<!--
@@ -379,11 +428,7 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate-entitymanager.version}</version>
 		</dependency>
-        <dependency>
-         	<groupId>org.hibernate</groupId>
-    		<artifactId>hibernate-search</artifactId>
-    		<version>${hibernate-search.version}</version>
-        </dependency>
+        
         <dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-tools</artifactId>
@@ -428,34 +473,7 @@
 			<artifactId>jboss-ejb3x</artifactId>
 			<version>${jboss.version}</version>
 		</dependency>
-		<dependency>
-    		<groupId>org.jboss.seam</groupId>
-  			<artifactId>jboss-el</artifactId>
-    		<version>${jboss-el.version}</version>
-    	</dependency>
-		<dependency>
-      		<groupId>org.jboss.seam</groupId>
-      		<artifactId>jboss-seam</artifactId>
-      		<version>${jboss-seam.version}</version>
-    	</dependency>
     	<dependency>
-      		<groupId>org.jboss.seam</groupId>
-      		<artifactId>jboss-seam</artifactId>
-      		<version>${jboss-seam.version}</version>
-      		<type>ejb</type>
-    	</dependency>
-    	<dependency>
-			<groupId>org.jboss.seam</groupId>
-			<artifactId>jboss-seam-debug</artifactId>
-			<version>${jboss-seam.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jboss.seam</groupId>
-			<artifactId>jboss-seam-ui</artifactId>
-			<version>${jboss-seam.version}</version>
-		</dependency>
-		
-			<dependency>
 			<groupId>jboss</groupId>
 			<artifactId>jbosssx-client</artifactId>
 			<version>${jboss.version}</version>
@@ -470,11 +488,7 @@
 			<groupId>jdiameter</groupId>
 			<version>${jdiameter.version}</version>
 		</dependency>
-		 <dependency>
-    		<groupId>org.jbpm</groupId>
-			<artifactId>jbpm-jpdl</artifactId>
-    		<version>${jbpm.version}</version>
-    	</dependency>
+		
 		<dependency>
 			<groupId>jboss</groupId>
 			<artifactId>jmx-adaptor-plugin</artifactId>
