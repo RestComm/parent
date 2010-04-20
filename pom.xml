@@ -565,26 +565,21 @@
 	</issueManagement>
 	
 	<repositories>
-		 <repository>
-      <id>jboss</id>
-      <name>JBoss Repository</name>
-      <url>http://repository.jboss.org/maven2</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>jboss-snapshots</id>
-      <name>JBoss Snapshot Repository</name>
-      <url>http://snapshots.jboss.org/maven2</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-		<repository>
+        <repository>
+          <id>jboss-public-repository-group</id>
+          <name>JBoss Public Maven Repository Group</name>
+          <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+          <layout>default</layout>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </snapshots>
+        </repository>
+        <repository>
 			<id>Codehaus Snapshots</id>
 			<url>http://snapshots.repository.codehaus.org</url>
 			<snapshots>
@@ -599,29 +594,23 @@
     		<name>Maven FreeHEP</name>
     		<url>http://java.freehep.org/maven2</url>
   		</repository>	
-	</repositories>
-
-	<pluginRepositories>
-		<pluginRepository>
-      <id>jboss</id>
-      <name>JBoss Plugin Repository</name>
-      <url>http://repository.jboss.org/maven2</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </pluginRepository>
-    <pluginRepository>
-      <id>jboss-snapshots</id>
-      <name>JBoss Snapshot Plugin Repository</name>
-      <url>http://snapshots.jboss.org/maven2</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </pluginRepository>
-		<pluginRepository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>jboss-public-repository-group</id>
+          <name>JBoss Public Maven Repository Group</name>
+          <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+          <layout>default</layout>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </snapshots>
+        </pluginRepository>
+        <pluginRepository>
 			<id>Codehaus Snapshots</id>
 			<url>http://snapshots.repository.codehaus.org</url>
 			<snapshots>
@@ -641,9 +630,9 @@
 			<name>java.freehep.org</name>
 			<id>java.freehep.org</id>
 			<url>http://java.freehep.org/maven2</url>
-		</pluginRepository>		
-	</pluginRepositories>
-	
+		</pluginRepository>
+      </pluginRepositories>
+      	
 	<profiles>
 		<profile>
 			<id>set-svn-revision</id>
