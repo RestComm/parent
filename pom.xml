@@ -4,7 +4,7 @@
 
 	<groupId>org.mobicents</groupId>
 	<artifactId>mobicents</artifactId>
-	<version>1.19-SNAPSHOT</version>
+	<version>1.19</version>
 	
 	<name>Mobicents :: Parent :: mobicents</name>
 	
@@ -38,7 +38,7 @@
 		<gwt-user.version>1.4.62</gwt-user.version>
 		<commons-fileupload.version>1.1</commons-fileupload.version>
 		<jain-sip-api.version>1.2</jain-sip-api.version>
-		<jain-sip-ri.version>1.2.X-SNAPSHOT</jain-sip-ri.version>
+		<jain-sip-ri.version>1.2.149</jain-sip-ri.version>
 		<jain-mgcp.version>1.0</jain-mgcp.version>			
 		<javax.activation.version>1.1</javax.activation.version>
 		<jcc.version>1.1</jcc.version>				
@@ -715,9 +715,9 @@
 	</build>
 	
 	<scm>
-		<connection>scm:svn:https://mobicents.googlecode.com/svn/trunk</connection>
-		<developerConnection>scm:svn:https://mobicents.googlecode.com/svn/trunk</developerConnection>
-		<url>http://mobicents.googlecode.com/svn/trunk</url>
+		<connection>scm:svn:https://mobicents.googlecode.com/svn/tags/parent/mobicents-1.19</connection>
+		<developerConnection>scm:svn:https://mobicents.googlecode.com/svn/tags/parent/mobicents-1.19</developerConnection>
+		<url>http://mobicents.googlecode.com/svn/tags/parent/mobicents-1.19</url>
 	</scm>
 	
 </project>
