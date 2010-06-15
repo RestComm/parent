@@ -304,6 +304,19 @@
 			</build>
 		</profile>
 		<profile>
+			<id>maven-release</id>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-release-plugin</artifactId>
+						<configuration>
+							<tagBase>https://mobicents.googlecode.com/svn/tags/parent</tagBase>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
 			<id>clover</id>
 			<build>
 				<plugins>
@@ -378,12 +391,7 @@
 					</archive>
 				</configuration>
 			</plugin>
-			<plugin>
-          		<artifactId>maven-release-plugin</artifactId>
-          		<configuration>
-           			<tagBase>https://mobicents.googlecode.com/svn/tags/parent</tagBase>
-		        </configuration>
-        	</plugin>
+			
 		</plugins>		
 	</build>
 	
