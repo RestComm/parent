@@ -107,6 +107,12 @@
 				<artifactId>jboss-as-server</artifactId>
 				<version>${jboss.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.jboss.jbossas</groupId>
+				<artifactId>jboss-as-console</artifactId>
+				<version>${jboss.version}</version>
+			</dependency>
+		
 		
 			<dependency>
 				<groupId>javax.slee</groupId>
