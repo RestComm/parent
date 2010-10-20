@@ -11,13 +11,91 @@
 	<url>http://www.mobicents.org</url>
 	<developers>
 		<developer>
+			<id>alex</id>
+			<name>Alexandre Mendonça</name>
+			<email>brainslog@gmail.com</email>
+			<organization>JBoss/Red Hat</organization>
+			<organizationUrl>http://www.redhat.com/</organizationUrl>
+			<roles>
+				<role>Diameter Project Lead</role>
+				<role>SLEE Active Developer</role>
+			</roles>
+			<timezone>0</timezone>
+		</developer>
+		<developer>
+			<id>amit</id>
+			<name>Amit Bhayani</name>
+			<email>abhayani@gmail.com</email>
+			<organization>JBoss/Red Hat</organization>
+			<organizationUrl>http://www.redhat.com/</organizationUrl>
+			<roles>
+				<role>Media Server Active Developer</role>
+				<role>SLEE Active Developer</role>				
+				<role>SS7 Active Developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<id>bartosz</id>
+			<name>Bartosz Baranowski</name>
+			<email>baranowb@gmail.com</email>
+			<organization>JBoss/Red Hat</organization>
+			<organizationUrl>http://www.redhat.com/</organizationUrl>
+			<roles>
+				<role>Diameter Project Lead</role>
+				<role>Media Server Active Developer</role>
+				<role>SIP Servlets Developer</role>
+				<role>SLEE Active Developer</role>
+				<role>SS7 Active Developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<id>eduardo</id>
+			<name>Eduardo Martins</name>
+			<email>emmartins@gmail.com</email>
+			<organization>JBoss/Red Hat</organization>
+			<organizationUrl>http://www.redhat.com/</organizationUrl>
+			<roles>
+				<role>SLEE Project Lead</role>
+				<role>SIP Presence Service Project Lead</role>
+			</roles>
+			<timezone>0</timezone>
+		</developer>
+		<developer>
+			<id>ivelin</id>
+			<name>Ivelin Ivanov</name>
+			<email>ivelin.atanasoff.ivanov@gmail.com</email>
+			<organization>JBoss/Red Hat</organization>
+			<organizationUrl>http://www.redhat.com/</organizationUrl>
+			<roles>
+				<role>Mobicents Platform Lead</role>
+				<role>SLEE Developer</role>								
+			</roles>
+			<timezone>+1</timezone>
+		</developer>		
+		<developer>
 			<id>jean.deruelle</id>
 			<name>Jean Deruelle</name>
 			<email>jean.deruelle@gmail.com</email>
 			<organization>JBoss/Red Hat</organization>
 			<organizationUrl>http://www.redhat.com/</organizationUrl>
 			<roles>
-				<role>Project Lead</role>
+				<role>SIP Servlets Project Lead</role>
+				<role>SLEE Developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<id>oleg</id>
+			<name>Oleg Kulikoff</name>
+			<email>oleg.kulikoff@gmail.com</email>
+			<organization>JBoss/Red Hat</organization>
+			<organizationUrl>http://www.redhat.com/</organizationUrl>
+			<roles>
+				<role>Media Server Project Lead</role>
+				<role>SLEE Active Developer</role>
+				<role>SS7 Active Developer</role>
 			</roles>
 			<timezone>+1</timezone>
 		</developer>
@@ -28,21 +106,12 @@
 			<organization>JBoss/Red Hat</organization>
 			<organizationUrl>http://www.redhat.com/</organizationUrl>
 			<roles>
-				<role>Active Developer</role>
+				<role>Media Server Developer</role>
+				<role>SIP Servlets Active Developer</role>
+				<role>SLEE Developer</role>				
 			</roles>
 			<timezone>+1</timezone>
-		</developer>
-		<developer>
-			<id>baranowb</id>
-			<name>Bartosz Baranowski</name>
-			<email>baranowb@gmail.com</email>
-			<organization>JBoss/Red Hat</organization>
-			<organizationUrl>http://www.redhat.com/</organizationUrl>
-			<roles>
-				<role>Developer</role>
-			</roles>
-			<timezone>+1</timezone>
-		</developer>		
+		</developer>			
 	</developers>
 	<licenses>
 		<license>
