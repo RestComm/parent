@@ -1,11 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>pom</packaging>
 
 	<groupId>org.mobicents</groupId>
 	<artifactId>mobicents-parent</artifactId>
-	<version>2.17-SNAPSHOT</version>
+	<version>2.17</version>
 
 	<name>Mobicents :: Parent :: mobicents</name>
 	<description>Mobicents :: Parent pom for 2.x releases</description>
@@ -527,9 +526,9 @@
 	</build>
 
 	<scm>
-		<connection>scm:svn:https://mobicents.googlecode.com/svn/branches/parent/2.x.y</connection>
-		<developerConnection>scm:svn:https://mobicents.googlecode.com/svn/branches/parent/2.x.y</developerConnection>
-		<url>http://mobicents.googlecode.com/svn/branches/parent/2.x.y</url>
+		<connection>scm:svn:https://mobicents.googlecode.com/svn/tags/parent/2.17</connection>
+		<developerConnection>scm:svn:https://mobicents.googlecode.com/svn/tags/parent/2.17</developerConnection>
+		<url>http://mobicents.googlecode.com/svn/tags/parent/2.17</url>
 	</scm>
 
 </project>
