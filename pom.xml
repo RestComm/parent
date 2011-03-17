@@ -499,7 +499,7 @@
 				<executions>
 					<execution>
 						<id>bundle-manifest</id>
-						<phase>process-resources</phase>
+						<phase>process-classes</phase>
 						<goals>
 							<goal>manifest</goal>
 						</goals>
