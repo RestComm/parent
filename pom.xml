@@ -173,11 +173,12 @@
 		<manifest.implementation.version>${pom.version}</manifest.implementation.version>
 		<manifest.implementation.vendor>JBoss, a Red Hat division</manifest.implementation.vendor>
 
-		<!-- default versions for mobicents maven plugins -->
-		<mobicents.tools.mavenplugin.du.version>2.0.0.CR3</mobicents.tools.mavenplugin.du.version>
-		<mobicents.tools.mavenplugin.library.version>1.0.0.CR2</mobicents.tools.mavenplugin.library.version>
+		<!-- default versions for mobicents maven plugins and other base mobicents APIs -->
+		<mobicents.slee.tools.mavenplugin.du.version>2.0.0.CR3</mobicents.slee.tools.mavenplugin.du.version>
+		<mobicents.slee.tools.mavenplugin.library.version>1.0.0.CR2</mobicents.slee.tools.mavenplugin.library.version>
 		<mobicents.tools.mavenplugin.eclipse.version>1.0.0.FINAL</mobicents.tools.mavenplugin.eclipse.version>
-
+		<mobicents.slee.api.extensions.version>1.0.0-SNAPSHOT</mobicents.slee.api.extensions.version>
+		
 	</properties>
 
 	<dependencyManagement>
@@ -225,13 +226,17 @@
 				<version>${jboss.version}</version>
 			</dependency>
 
-
 			<dependency>
 				<groupId>javax.slee</groupId>
 				<artifactId>jain-slee</artifactId>
 				<version>${jain-slee.version}</version>
 			</dependency>
-
+			<dependency>
+				<groupId>org.mobicents.servers.jainslee.api</groupId>
+				<artifactId>jain-slee-11-ext</artifactId>
+				<version>${mobicents.slee.api.extensions.version}</version>
+			</dependency>
+			
 			<dependency>
 				<groupId>ant</groupId>
 				<artifactId>ant</artifactId>
@@ -459,7 +464,7 @@
 				<plugin>
 					<groupId>org.mobicents.tools</groupId>
 					<artifactId>maven-du-plugin</artifactId>
-					<version>${mobicents.tools.mavenplugin.du.version}</version>
+					<version>${mobicents.slee.tools.mavenplugin.du.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.mobicents.tools</groupId>
@@ -470,7 +475,7 @@
 				<plugin>
 					<groupId>org.mobicents.tools</groupId>
 					<artifactId>maven-library-plugin</artifactId>
-					<version>${mobicents.tools.mavenplugin.library.version}</version>
+					<version>${mobicents.slee.tools.mavenplugin.library.version}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
