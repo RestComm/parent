@@ -179,6 +179,7 @@
 		<mobicents.tools.mavenplugin.eclipse.version>1.0.0.FINAL</mobicents.tools.mavenplugin.eclipse.version>
 		<mobicents.slee.api.extensions.version>1.0.0-SNAPSHOT</mobicents.slee.api.extensions.version>
 		
+		<license.year>2011</license.year>
 	</properties>
 
 	<dependencyManagement>
@@ -525,6 +526,56 @@
 					</instructions>
 				</configuration>
 			</plugin>
+	      <plugin>
+	        <groupId>com.mycila.maven-license-plugin</groupId>
+	        <artifactId>maven-license-plugin</artifactId>
+			<version>1.8.0</version>
+			<configuration>
+	            <header>http://mobicents.googlecode.com/svn/branches/parent/2.x.y/Mobicents-JBoss-LICENSE.txt</header>
+                <includes>
+                    <include>src/**/*.java</include>
+                    <include>**/test/**/*.java</include>
+                </includes>
+                <excludes>
+                    <exclude>target/**</exclude>
+                    <exclude>.clover/**</exclude>
+                </excludes>
+                <useDefaultExcludes>true</useDefaultExcludes>
+                <strictCheck>true</strictCheck>
+				<properties>
+                    <year>${license.year}</year>
+                </properties>
+                <encoding>UTF-8</encoding>
+                <headerDefinitions>
+                    <headerDefinition>http://mobicents.googlecode.com/svn/branches/parent/2.x.y/license-header_javadoc-style.xml</headerDefinition>
+                </headerDefinitions>
+	        </configuration>
+	          <executions>
+	              <execution>
+	                  <phase>verify</phase>
+	                  <goals>
+	                      <goal>check</goal>
+	                  </goals>
+	              </execution>
+	          </executions>
+	      </plugin>
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-javadoc-plugin</artifactId>
+	        <version>2.7</version>
+	        <configuration>
+	          <nohelp>true</nohelp>
+	        </configuration>
+            <executions>
+              <execution>
+                <id>attach-javadoc</id>
+				<phase>verify</phase>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+	      </plugin>
 		</plugins>
 	</build>
 
