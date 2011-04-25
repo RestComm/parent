@@ -174,8 +174,8 @@
 		<manifest.implementation.vendor>JBoss, a Red Hat division</manifest.implementation.vendor>
 
 		<!-- default versions for mobicents maven plugins and other base mobicents APIs -->
-		<mobicents.slee.tools.mavenplugin.du.version>2.0.0.CR3</mobicents.slee.tools.mavenplugin.du.version>
-		<mobicents.slee.tools.mavenplugin.library.version>1.0.0.CR2</mobicents.slee.tools.mavenplugin.library.version>
+		<mobicents.slee.tools.mavenplugin.du.version>2.0.0.FINAL</mobicents.slee.tools.mavenplugin.du.version>
+		<mobicents.slee.tools.mavenplugin.library.version>1.0.0.FINAL</mobicents.slee.tools.mavenplugin.library.version>
 		<mobicents.tools.mavenplugin.eclipse.version>1.0.0.FINAL</mobicents.tools.mavenplugin.eclipse.version>
 		<mobicents.slee.api.extensions.version>1.0.0-SNAPSHOT</mobicents.slee.api.extensions.version>
 		
