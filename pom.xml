@@ -533,6 +533,33 @@
 			</build>
 		</profile>
 		<profile>
+			<id>remove-source-headers</id>
+			<build>
+				<plugins>
+			      <plugin>
+			        <groupId>com.mycila.maven-license-plugin</groupId>
+			        <artifactId>maven-license-plugin</artifactId>
+					<version>1.8.0</version>
+					<configuration>
+		                <header>http://mobicents.googlecode.com/svn/branches/parent/2.x.y/Mobicents-JBoss-LICENSE.txt</header>
+		                <includes>
+		                    <include>src/**/*.java</include>
+		                    <include>**/test/**/*.java</include>
+		                </includes>
+			        </configuration>
+			          <executions>
+			              <execution>
+			                  <phase>verify</phase>
+			                  <goals>
+			                      <goal>remove</goal>
+			                  </goals>
+			              </execution>
+			          </executions>
+			      </plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
 			<id>generate-javadoc</id>
 			<build>
 				<plugins>
