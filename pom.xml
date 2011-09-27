@@ -624,6 +624,12 @@
 					<artifactId>maven-library-plugin</artifactId>
 					<version>${mobicents.slee.tools.mavenplugin.library.version}</version>
 				</plugin>
+				<plugin>
+					<groupId>org.jboss.maven.plugins</groupId>
+					<artifactId>maven-jdocbook-plugin</artifactId>
+					<version>2.3.0</version>
+					<extensions>true</extensions>							
+				</plugin>
 			</plugins>
 		</pluginManagement>
 		<plugins>
