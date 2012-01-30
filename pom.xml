@@ -4,7 +4,7 @@
 
 	<groupId>org.mobicents</groupId>
 	<artifactId>mobicents-parent</artifactId>
-	<version>2.21</version>
+	<version>2.22-SNAPSHOT</version>
 
 	<name>Mobicents :: Parent :: mobicents</name>
 	<description>Mobicents :: Parent pom for 2.x releases</description>
@@ -685,9 +685,9 @@
 	</build>
 
 	<scm>
-		<connection>scm:svn:https://mobicents.googlecode.com/svn/tags/parent/2.21</connection>
-		<developerConnection>scm:svn:https://mobicents.googlecode.com/svn/tags/parent/2.21</developerConnection>
-		<url>http://mobicents.googlecode.com/svn/tags/parent/2.21</url>
+		<connection>scm:svn:https://mobicents.googlecode.com/svn/branches/parent/2.x.y</connection>
+		<developerConnection>scm:svn:https://mobicents.googlecode.com/svn/branches/parent/2.x.y</developerConnection>
+		<url>http://mobicents.googlecode.com/svn/branches/parent/2.x.y</url>
 	</scm>
 
 </project>
