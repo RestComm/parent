@@ -52,7 +52,7 @@
 		</license>
 	</licenses>
 
-	<distributionManagement>
+	<!--distributionManagement>
     <repository>
       <id>jboss-releases-repository</id>
       <name>JBoss Releases Repository</name>
@@ -63,8 +63,22 @@
       <name>JBoss Snapshots Repository</name>
       <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
-  </distributionManagement>
+  </distributionManagement-->
 	
+
+  <distributionManagement>
+    <repository>
+      <id>mobicents-releases-repository</id>
+      <name>Mobicents Releases Repository</name>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+    </repository>
+    <snapshotRepository>
+      <id>mobicents-snapshots-repository</id>
+      <name>Mobicents Snapshots Repository</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
 	<properties>		
 		<!-- dependency versions -->
 		<jboss.version>4.2.3.GA</jboss.version>
@@ -82,7 +96,7 @@
 		<gwt-user.version>1.4.62</gwt-user.version>
 		<commons-fileupload.version>1.1</commons-fileupload.version>
 		<jain-sip-api.version>1.2</jain-sip-api.version>
-		<jain-sip-ri.version>1.2.X-SNAPSHOT</jain-sip-ri.version>
+		<jain-sip-ri.version>1.2.166</jain-sip-ri.version>
 		<jain-mgcp.version>1.0</jain-mgcp.version>			
 		<javax.activation.version>1.1</javax.activation.version>
 		<jcc.version>1.1</jcc.version>				
@@ -149,7 +163,7 @@
 		<manifest.url>http://www.mobicents.org</manifest.url>
 		<manifest.implementation.title>${pom.groupId}:${pom.artifactId}</manifest.implementation.title>
 		<manifest.implementation.version>${pom.version}</manifest.implementation.version>
-		<manifest.implementation.vendor>JBoss, a Red Hat division</manifest.implementation.vendor>
+		<manifest.implementation.vendor>TeleStax, Inc.</manifest.implementation.vendor>
 		
 		<license.year>2011</license.year>
 	</properties>
@@ -601,29 +615,44 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<issueManagement>
+	<!--issueManagement>
 		<system>Bugzilla</system>
 		<url>
 			http://code.google.com/p/mobicents/issues/list
 		</url>
-	</issueManagement>
+	</issueManagement-->
 	
 	<repositories>
-        <repository>
-          <id>jboss-public-repository-group</id>
-          <name>JBoss Public Maven Repository Group</name>
-          <url>https://repository.jboss.org/nexus/content/groups/public/</url>
-          <layout>default</layout>
-          <releases>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-          </snapshots>
-        </repository>
-        <repository>
+		<repository>
+			  <id>mobicents-public-repository-group</id>
+			  <name>Mobicens Public Maven Repository Group</name>
+			  <url>https://oss.sonatype.org/content/groups/public</url>
+			  <layout>default</layout>
+			  <releases>
+			    <enabled>true</enabled>
+			    <updatePolicy>never</updatePolicy>
+			  </releases>
+			  <snapshots>
+			    <enabled>true</enabled>
+			    <updatePolicy>never</updatePolicy>
+			  </snapshots>
+		</repository>
+		<repository>
+			  <id>jboss-public-repository-group</id>
+			  <name>JBoss Public Maven Repository Group</name>
+			  <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+			  <layout>default</layout>
+			  <releases>
+			    <enabled>true</enabled>
+			    <updatePolicy>never</updatePolicy>
+			  </releases>
+			  <snapshots>
+			    <enabled>true</enabled>
+			    <updatePolicy>never</updatePolicy>
+			  </snapshots>
+		</repository>
+
+		<repository>
 			<id>Codehaus Snapshots</id>
 			<url>http://snapshots.repository.codehaus.org</url>
 			<snapshots>
@@ -633,28 +662,43 @@
 				<enabled>false</enabled>
 			</releases>
 		</repository>
+
 		<repository>
-    		<id>freehep-maven</id>
-    		<name>Maven FreeHEP</name>
-    		<url>http://java.freehep.org/maven2</url>
+	    		<id>freehep-maven</id>
+	    		<name>Maven FreeHEP</name>
+	    		<url>http://java.freehep.org/maven2</url>
   		</repository>	
       </repositories>
       <pluginRepositories>
-        <pluginRepository>
-          <id>jboss-public-repository-group</id>
-          <name>JBoss Public Maven Repository Group</name>
-          <url>https://repository.jboss.org/nexus/content/groups/public/</url>
-          <layout>default</layout>
-          <releases>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>never</updatePolicy>
-          </snapshots>
-        </pluginRepository>
-        <pluginRepository>
+		<repository>
+			  <id>mobicents-public-repository-group</id>
+			  <name>Mobicens Public Maven Repository Group</name>
+			  <url>https://oss.sonatype.org/content/groups/public</url>
+			  <layout>default</layout>
+			  <releases>
+			    <enabled>true</enabled>
+			    <updatePolicy>never</updatePolicy>
+			  </releases>
+			  <snapshots>
+			    <enabled>true</enabled>
+			    <updatePolicy>never</updatePolicy>
+			  </snapshots>
+		</repository>
+		<pluginRepository>
+			  <id>jboss-public-repository-group</id>
+			  <name>JBoss Public Maven Repository Group</name>
+			  <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+			  <layout>default</layout>
+			  <releases>
+			    <enabled>true</enabled>
+			    <updatePolicy>never</updatePolicy>
+			  </releases>
+			  <snapshots>
+			    <enabled>true</enabled>
+			    <updatePolicy>never</updatePolicy>
+			  </snapshots>
+		</pluginRepository>
+        	<pluginRepository>
 			<id>Codehaus Snapshots</id>
 			<url>http://snapshots.repository.codehaus.org</url>
 			<snapshots>
@@ -679,13 +723,13 @@
       	
 	<profiles>
 		<profile>
-			<id>set-svn-revision</id>
+			<id>set-svn-revision</id><!--should be replaced by set-git-hash, need to evaluate impact on all builds -->
 			<build>
 		<plugins>
 			<plugin>
 			  <groupId>org.codehaus.mojo</groupId>
 			  <artifactId>buildnumber-maven-plugin</artifactId>
-			  <version>1.0-beta-1</version>
+			  <version>1.0</version>
 			  <executions>
     			<execution>
 			      <phase>validate</phase>
@@ -864,18 +908,15 @@
 				</configuration>
 			</plugin>
 			<plugin>
-          		<artifactId>maven-release-plugin</artifactId>
-          		<configuration>
-           			<tagBase>https://mobicents.googlecode.com/svn/tags/parent</tagBase>
-		        </configuration>
-        	</plugin>
+        	  		<artifactId>maven-release-plugin</artifactId>     
+	        	</plugin>
 		</plugins>		
 	</build>
 	
 	<scm>
-		<connection>scm:svn:https://mobicents.googlecode.com/svn/trunk</connection>
-		<developerConnection>scm:svn:https://mobicents.googlecode.com/svn/trunk</developerConnection>
-		<url>http://mobicents.googlecode.com/svn/trunk</url>
+		<connection>scm:git:https://code.google.com/p/commscale/</connection>
+		<developerConnection>scm:git:https://code.google.com/p/commscale/</developerConnection>
+		<url>https://code.google.com/p/commscale/</url>
 	</scm>
 	
 </project>
