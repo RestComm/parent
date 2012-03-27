@@ -161,8 +161,8 @@
 		
 		<!-- redefine in your POM if you want to change in manifest file -->
 		<manifest.url>http://www.mobicents.org</manifest.url>
-		<manifest.implementation.title>${pom.groupId}:${pom.artifactId}</manifest.implementation.title>
-		<manifest.implementation.version>${pom.version}</manifest.implementation.version>
+		<manifest.implementation.title>${project.groupId}:${project.artifactId}</manifest.implementation.title>
+		<manifest.implementation.version>${project.version}</manifest.implementation.version>
 		<manifest.implementation.vendor>TeleStax, Inc.</manifest.implementation.vendor>
 		
 		<license.year>2011</license.year>
