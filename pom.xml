@@ -120,7 +120,7 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-	<distributionManagement>
+	<!--distributionManagement>
 		<repository>
 			<id>jboss-releases-repository</id>
 			<name>JBoss Releases Repository</name>
@@ -131,7 +131,20 @@
 			<name>JBoss Snapshots Repository</name>
 			<url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
-	</distributionManagement>
+	</distributionManagement-->
+
+	<distributionManagement>
+	    <repository>
+	      <id>mobicents-releases-repository</id>
+	      <name>Mobicents Releases Repository</name>
+	      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+	    </repository>
+	    <snapshotRepository>
+	      <id>mobicents-snapshots-repository</id>
+	      <name>Mobicents Snapshots Repository</name>
+	      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+	    </snapshotRepository>
+	  </distributionManagement>
 
 	<properties>
 		<!-- dependency versions -->
@@ -141,8 +154,8 @@
 		<jain-slee.version>1.1</jain-slee.version>
 		<commons-pool.version>1.4</commons-pool.version>
 		<ant.version>1.6.5</ant.version>
-		<jain-sip-api.version>1.2</jain-sip-api.version>
-		<jain-sip-ri.version>1.2.164</jain-sip-ri.version>
+		<jain-sip-api.version>1.2.0</jain-sip-api.version>
+		<jain-sip-ri.version>1.2.169</jain-sip-ri.version>
 		<jain-mgcp.version>1.0</jain-mgcp.version>
 		<servlet-api.version>2.4</servlet-api.version>
 		<rome.version>0.9</rome.version>
@@ -171,7 +184,7 @@
 		<manifest.url>http://www.mobicents.org</manifest.url>
 		<manifest.implementation.title>${project.groupId}:${project.artifactId}</manifest.implementation.title>
 		<manifest.implementation.version>${project.version}</manifest.implementation.version>
-		<manifest.implementation.vendor>JBoss, a Red Hat division</manifest.implementation.vendor>
+		<manifest.implementation.vendor>TeleStax, Inc.</manifest.implementation.vendor>
 
 		<!-- default versions for mobicents maven plugins and other base mobicents APIs -->
 		<mobicents.slee.tools.mavenplugin.du.version>2.0.1.FINAL</mobicents.slee.tools.mavenplugin.du.version>
@@ -362,14 +375,28 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<issueManagement>
+	<!--issueManagement>
 		<system>Bugzilla</system>
 		<url>
 			http://code.google.com/p/mobicents/issues/list
 		</url>
-	</issueManagement>
+	</issueManagement-->
 
 	<repositories>
+		<repository>
+                          <id>mobicents-public-repository-group</id>
+                          <name>Mobicens Public Maven Repository Group</name>
+                          <url>https://oss.sonatype.org/content/groups/public</url>
+                          <layout>default</layout>
+                          <releases>
+                            <enabled>true</enabled>
+                            <updatePolicy>never</updatePolicy>
+                          </releases>
+                          <snapshots>
+                            <enabled>true</enabled>
+                            <updatePolicy>never</updatePolicy>
+                          </snapshots>
+                </repository>
 		<repository>
 			<id>jboss-public-repository-group</id>
 			<name>JBoss Public Maven Repository Group</name>
@@ -402,6 +429,20 @@
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
+                          <id>mobicents-public-repository-group</id>
+                          <name>Mobicens Public Maven Repository Group</name>
+                          <url>https://oss.sonatype.org/content/groups/public</url>
+                          <layout>default</layout>
+                          <releases>
+                            <enabled>true</enabled>
+                            <updatePolicy>never</updatePolicy>
+                          </releases>
+                          <snapshots>
+                            <enabled>true</enabled>
+                            <updatePolicy>never</updatePolicy>
+                          </snapshots>
+                </pluginRepository>
+		<pluginRepository>
 			<id>jboss-public-repository-group</id>
 			<name>JBoss Public Maven Repository Group</name>
 			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
@@ -419,29 +460,29 @@
 
 	<profiles>
 		<profile>
-			<id>set-svn-revision</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>buildnumber-maven-plugin</artifactId>
-						<version>1.0-beta-1</version>
-						<executions>
-							<execution>
-								<phase>validate</phase>
-								<goals>
-									<goal>create</goal>
-								</goals>
-							</execution>
-						</executions>
-						<configuration>
-							<doCheck>false</doCheck>
-							<doUpdate>false</doUpdate>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
+                        <id>set-git-hash</id>
+                        <build>
+		        <plugins>
+		                <plugin>
+		                  <groupId>org.codehaus.mojo</groupId>
+		                  <artifactId>buildnumber-maven-plugin</artifactId>
+		                  <version>1.0</version>
+		                  <executions>
+		                	<execution>
+				              <phase>validate</phase>
+				              <goals>
+				              	<goal>create</goal>
+				              </goals>
+				        </execution>
+		                  </executions>
+		                  <configuration>
+		                    <doCheck>false</doCheck>
+		                    <doUpdate>false</doUpdate>
+		                  </configuration>
+		                </plugin>
+                        </plugins>
+                        </build>
+                </profile>
 		<profile>
 			<id>maven-release</id>
 			<build>
@@ -598,6 +639,32 @@
 				</plugins>
 			</build>
 		</profile>
+		<profile>
+                      <id>release-sign-artifacts</id>
+                      <activation>
+                        <property>
+                          <name>performRelease</name>
+                          <value>true</value>
+                        </property>
+                      </activation>
+                      <build>
+                        <plugins>
+                          <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-gpg-plugin</artifactId>
+                            <executions>
+                              <execution>
+                                <id>sign-artifacts</id>
+                                <phase>install</phase>
+                                <goals>
+                                  <goal>sign</goal>
+                                </goals>
+                              </execution>
+                            </executions>
+                          </plugin>
+                        </plugins>
+                      </build>
+                    </profile>
 	</profiles>
 
 	<build>
@@ -684,10 +751,10 @@
 		</plugins>
 	</build>
 
-	<scm>
-		<connection>scm:svn:https://mobicents.googlecode.com/svn/branches/parent/2.x.y</connection>
-		<developerConnection>scm:svn:https://mobicents.googlecode.com/svn/branches/parent/2.x.y</developerConnection>
-		<url>http://mobicents.googlecode.com/svn/branches/parent/2.x.y</url>
-	</scm>
+	 <scm>
+                <connection>scm:git:https://code.google.com/p/commscale/</connection>
+                <developerConnection>scm:git:https://code.google.com/p/commscale/</developerConnection>
+                <url>https://code.google.com/p/commscale/</url>
+        </scm>
 
 </project>
