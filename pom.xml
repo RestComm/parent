@@ -78,8 +78,8 @@
 			<id>jean.deruelle</id>
 			<name>Jean Deruelle</name>
 			<email>jean.deruelle@gmail.com</email>
-			<organization>JBoss/Red Hat</organization>
-			<organizationUrl>http://www.redhat.com/</organizationUrl>
+			<organization>TeleStax, Inc</organization>
+			<organizationUrl>http://www.telestax.com/</organizationUrl>
 			<roles>
 				<role>SIP Servlets Project Lead</role>
 				<role>SLEE Developer</role>
