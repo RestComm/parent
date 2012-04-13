@@ -662,12 +662,6 @@
 				<enabled>false</enabled>
 			</releases>
 		</repository>
-
-		<repository>
-	    		<id>freehep-maven</id>
-	    		<name>Maven FreeHEP</name>
-	    		<url>http://java.freehep.org/maven2</url>
-  		</repository>	
       </repositories>
       <pluginRepositories>
 		<pluginRepository>
@@ -707,18 +701,7 @@
 			<releases>
 				<enabled>false</enabled>
 			</releases>
-		</pluginRepository>
-		<pluginRepository>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<name>java.freehep.org</name>
-			<id>java.freehep.org</id>
-			<url>http://java.freehep.org/maven2</url>
-		</pluginRepository>
+		</pluginRepository>		
       </pluginRepositories>
       	
 	<profiles>
@@ -903,6 +886,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
 				<configuration>
 					<source>${compile.source}</source>
 					<target>${compile.source}</target>
@@ -912,6 +896,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
 				<configuration>
 					<archive>						
 						<manifestEntries>
@@ -934,6 +919,7 @@
 			</plugin>
 			<plugin>
         	  		<artifactId>maven-release-plugin</artifactId>     
+				<version>2.2.2</version>
 	        	</plugin>				     	   
 		</plugins>		
 	</build>
