@@ -520,7 +520,7 @@
 			        <artifactId>maven-license-plugin</artifactId>
 					<version>1.8.0</version>
 					<configuration>
-			            <header>http://mobicents.googlecode.com/svn/branches/parent/2.x.y/Mobicents-JBoss-LICENSE.txt</header>
+			            <header>https://commscale.googlecode.com/git-history/2.x/TeleStax-License-header.txt</header>
 		                <includes>
 		                    <include>src/**/*.java</include>
 		                    <include>**/test/**/*.java</include>
@@ -536,7 +536,7 @@
 		                </properties>
 		                <encoding>UTF-8</encoding>
 		                <headerDefinitions>
-		                    <headerDefinition>http://mobicents.googlecode.com/svn/branches/parent/2.x.y/license-header_javadoc-style.xml</headerDefinition>
+		                    <headerDefinition>https://commscale.googlecode.com/git-history/2.x/license-header_javadoc-style.xml</headerDefinition>
 		                </headerDefinitions>
 			        </configuration>
 			          <executions>
@@ -560,7 +560,7 @@
 			        <artifactId>maven-license-plugin</artifactId>
 					<version>1.8.0</version>
 					<configuration>
-			            <header>http://mobicents.googlecode.com/svn/branches/parent/2.x.y/Mobicents-JBoss-LICENSE.txt</header>
+			            <header>https://commscale.googlecode.com/git-history/2.x/TeleStax-License-header.txt</header>
 		                <includes>
 		                    <include>src/**/*.java</include>
 		                    <include>**/test/**/*.java</include>
@@ -576,7 +576,7 @@
 		                </properties>
 		                <encoding>UTF-8</encoding>
 		                <headerDefinitions>
-		                    <headerDefinition>http://mobicents.googlecode.com/svn/branches/parent/2.x.y/license-header_javadoc-style.xml</headerDefinition>
+		                    <headerDefinition>https://commscale.googlecode.com/git-history/2.x/license-header_javadoc-style.xml</headerDefinition>
 		                </headerDefinitions>
 			        </configuration>
 			          <executions>
@@ -600,7 +600,7 @@
 			        <artifactId>maven-license-plugin</artifactId>
 					<version>1.8.0</version>
 					<configuration>
-		                <header>http://mobicents.googlecode.com/svn/branches/parent/2.x.y/Mobicents-JBoss-LICENSE.txt</header>
+		                <header>https://commscale.googlecode.com/git-history/2.x/TeleStax-License-header.txt</header>
 		                <includes>
 		                    <include>src/**/*.java</include>
 		                    <include>**/test/**/*.java</include>
