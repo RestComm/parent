@@ -4,7 +4,7 @@
 
 	<groupId>org.mobicents</groupId>
 	<artifactId>mobicents-parent</artifactId>
-	<version>2.27-SNAPSHOT</version>
+	<version>2.27.15</version>
 
 	<name>Mobicents :: Parent :: mobicents</name>
 	<description>Mobicents :: Parent pom for 2.x releases</description>
