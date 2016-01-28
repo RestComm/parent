@@ -3,12 +3,12 @@
 	<packaging>pom</packaging>
 
 	<groupId>org.mobicents</groupId>
-	<artifactId>mobicents-parent</artifactId>
-	<version>2.27-SNAPSHOT</version>
+	<artifactId>restcomm-parent</artifactId>
+	<version>3.0.0-SNAPSHOT</version>
 
-	<name>Mobicents :: Parent :: mobicents</name>
-	<description>Mobicents :: Parent pom for 2.x releases</description>
-	<url>http://www.mobicents.org</url>
+	<name>RestComm :: Parent :: Restcomm</name>
+	<description>RestComm :: Parent pom</description>
+	<url>http://www.restcomm.org</url>
 	<developers>
 		<developer>
 			<id>alex</id>
@@ -115,8 +115,8 @@
 	</developers>
 	<licenses>
 		<license>
-			<name>GNU LESSER GENERAL PUBLIC LICENSE</name>
-			<url>http://www.gnu.org/licenses/lgpl-2.1.html</url>
+			<name>GNU_Affero_General_Public_License</name>
+			<url>http://www.gnu.org/licenses/agpl-3.0.html</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
@@ -193,12 +193,9 @@
 		<manifest.implementation.vendor>TeleStax, Inc.</manifest.implementation.vendor>
 
 		<!-- default versions for mobicents maven plugins and other base mobicents APIs -->
-		<mobicents.slee.tools.mavenplugin.du.version>2.0.1.FINAL</mobicents.slee.tools.mavenplugin.du.version>
-		<mobicents.slee.tools.mavenplugin.library.version>1.0.0.FINAL</mobicents.slee.tools.mavenplugin.library.version>
-		<mobicents.tools.mavenplugin.eclipse.version>1.0.1.FINAL</mobicents.tools.mavenplugin.eclipse.version>
-		<mobicents.slee.api.extensions.version>1.0.0.FINAL</mobicents.slee.api.extensions.version>
+		<restcomm.tools.mavenplugin.eclipse.version>1.0.1.FINAL</restcomm.tools.mavenplugin.eclipse.version>
 		
-		<license.year>2011</license.year>
+		<license.year>2016</license.year>
 	</properties>
 
 	<dependencyManagement>
@@ -254,7 +251,7 @@
 			<dependency>
 				<groupId>org.mobicents.servers.jainslee.api</groupId>
 				<artifactId>jain-slee-11-ext</artifactId>
-				<version>${mobicents.slee.api.extensions.version}</version>
+				<version>${restcomm.slee.api.extensions.version}</version>
 			</dependency>
 			
 			<dependency>
@@ -701,19 +698,9 @@
 				</plugin>
 				<plugin>
 					<groupId>org.mobicents.tools</groupId>
-					<artifactId>maven-du-plugin</artifactId>
-					<version>${mobicents.slee.tools.mavenplugin.du.version}</version>
-				</plugin>
-				<plugin>
-					<groupId>org.mobicents.tools</groupId>
 					<artifactId>maven-eclipse-plugin</artifactId>
-					<version>${mobicents.tools.mavenplugin.eclipse.version}</version>
+					<version>${restcomm.tools.mavenplugin.eclipse.version}</version>
 					<extensions>true</extensions>
-				</plugin>
-				<plugin>
-					<groupId>org.mobicents.tools</groupId>
-					<artifactId>maven-library-plugin</artifactId>
-					<version>${mobicents.slee.tools.mavenplugin.library.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.jboss.maven.plugins</groupId>
