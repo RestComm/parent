@@ -3,12 +3,12 @@
 	<packaging>pom</packaging>
 
 	<groupId>org.mobicents</groupId>
-	<artifactId>mobicents-parent</artifactId>
+	<artifactId>restcomm-parent</artifactId>
 	<version>2.27-SNAPSHOT</version>
 
-	<name>Mobicents :: Parent :: mobicents</name>
-	<description>Mobicents :: Parent pom for 2.x releases</description>
-	<url>http://www.mobicents.org</url>
+	<name>Restcomm :: Parent :: restcomm</name>
+	<description>Restcomm :: Parent pom for 2.x releases</description>
+	<url>http://www.restcomm.org</url>
 	<developers>
 		<developer>
 			<id>alex</id>
@@ -69,7 +69,7 @@
 			<organization>TeleStax, Inc.</organization>
 			<organizationUrl>http://www.telestax.com/</organizationUrl>
 			<roles>
-				<role>Mobicents Platform Lead</role>
+				<role>Restcomm Platform Lead</role>
 				<role>SLEE Developer</role>
 			</roles>
 			<timezone>+1</timezone>
@@ -135,13 +135,13 @@
 
 	<distributionManagement>
 	    <repository>
-	      <id>mobicents-releases-repository</id>
-	      <name>Mobicents Releases Repository</name>
+	      <id>restcomm-releases-repository</id>
+	      <name>Restcomm Releases Repository</name>
 	      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
 	    </repository>
 	    <snapshotRepository>
-	      <id>mobicents-snapshots-repository</id>
-	      <name>Mobicents Snapshots Repository</name>
+	      <id>restcomm-snapshots-repository</id>
+	      <name>Restcomm Snapshots Repository</name>
 	      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
 	    </snapshotRepository>
 	  </distributionManagement>
@@ -187,16 +187,16 @@
 		<jboss.home>${env.JBOSS_HOME}</jboss.home>
 
 		<!-- redefine in your POM if you want to change in manifest file -->
-		<manifest.url>http://www.mobicents.org</manifest.url>
+		<manifest.url>http://www.restcomm.org</manifest.url>
 		<manifest.implementation.title>${project.groupId}:${project.artifactId}</manifest.implementation.title>
 		<manifest.implementation.version>${project.version}</manifest.implementation.version>
 		<manifest.implementation.vendor>TeleStax, Inc.</manifest.implementation.vendor>
 
-		<!-- default versions for mobicents maven plugins and other base mobicents APIs -->
-		<mobicents.slee.tools.mavenplugin.du.version>2.0.1.FINAL</mobicents.slee.tools.mavenplugin.du.version>
-		<mobicents.slee.tools.mavenplugin.library.version>1.0.0.FINAL</mobicents.slee.tools.mavenplugin.library.version>
-		<mobicents.tools.mavenplugin.eclipse.version>1.0.1.FINAL</mobicents.tools.mavenplugin.eclipse.version>
-		<mobicents.slee.api.extensions.version>1.0.0.FINAL</mobicents.slee.api.extensions.version>
+		<!-- default versions for restcomm maven plugins and other base restcomm APIs -->
+		<restcomm.slee.tools.mavenplugin.du.version>2.0.1.FINAL</restcomm.slee.tools.mavenplugin.du.version>
+		<restcomm.slee.tools.mavenplugin.library.version>1.0.0.FINAL</restcomm.slee.tools.mavenplugin.library.version>
+		<restcomm.tools.mavenplugin.eclipse.version>1.0.1.FINAL</restcomm.tools.mavenplugin.eclipse.version>
+		<restcomm.slee.api.extensions.version>1.0.0.FINAL</restcomm.slee.api.extensions.version>
 		
 		<license.year>2011</license.year>
 	</properties>
@@ -252,9 +252,9 @@
 				<version>${jain-slee.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.mobicents.servers.jainslee.api</groupId>
+				<groupId>org.restcomm.servers.jainslee.api</groupId>
 				<artifactId>jain-slee-11-ext</artifactId>
-				<version>${mobicents.slee.api.extensions.version}</version>
+				<version>${restcomm.slee.api.extensions.version}</version>
 			</dependency>
 			
 			<dependency>
@@ -381,17 +381,10 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<!--issueManagement>
-		<system>Bugzilla</system>
-		<url>
-			http://code.google.com/p/mobicents/issues/list
-		</url>
-	</issueManagement-->
-
 	<repositories>
 		<repository>
-                          <id>mobicents-public-repository-group</id>
-                          <name>Mobicens Public Maven Repository Group</name>
+                          <id>restcomm-public-repository-group</id>
+                          <name>Restcomm Public Maven Repository Group</name>
                           <url>https://oss.sonatype.org/content/groups/public</url>
                           <layout>default</layout>
                           <releases>
@@ -435,8 +428,8 @@
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
-                          <id>mobicents-public-repository-group</id>
-                          <name>Mobicens Public Maven Repository Group</name>
+                          <id>restcomm-public-repository-group</id>
+                          <name>Restcomm Public Maven Repository Group</name>
                           <url>https://oss.sonatype.org/content/groups/public</url>
                           <layout>default</layout>
                           <releases>
@@ -702,18 +695,18 @@
 				<plugin>
 					<groupId>org.mobicents.tools</groupId>
 					<artifactId>maven-du-plugin</artifactId>
-					<version>${mobicents.slee.tools.mavenplugin.du.version}</version>
+					<version>${restcomm.slee.tools.mavenplugin.du.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.mobicents.tools</groupId>
 					<artifactId>maven-eclipse-plugin</artifactId>
-					<version>${mobicents.tools.mavenplugin.eclipse.version}</version>
+					<version>${restcomm.tools.mavenplugin.eclipse.version}</version>
 					<extensions>true</extensions>
 				</plugin>
 				<plugin>
 					<groupId>org.mobicents.tools</groupId>
 					<artifactId>maven-library-plugin</artifactId>
-					<version>${mobicents.slee.tools.mavenplugin.library.version}</version>
+					<version>${restcomm.slee.tools.mavenplugin.library.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.jboss.maven.plugins</groupId>
@@ -778,7 +771,7 @@
 			      <version>1.6.2</version>
 			      <extensions>true</extensions>
 			      <configuration>
-				<serverId>mobicents-releases-repository</serverId>
+				<serverId>restcomm-releases-repository</serverId>
 				<nexusUrl>https://oss.sonatype.org/</nexusUrl>
 			      </configuration>
 			      <executions>
