@@ -2,14 +2,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>pom</packaging>
 
-	<groupId>org.mobicents</groupId>
+	<groupId>org.restcomm</groupId>
 	<artifactId>restcomm-parent</artifactId>
 	<version>3.0.0-SNAPSHOT</version>
 
 	<name>RestComm :: Parent :: Restcomm</name>
 	<description>RestComm :: Parent pom</description>
 	<url>http://www.restcomm.org</url>
-	<developers>
+	<!--developers>
 		<developer>
 			<id>alex</id>
 			<name>Alexandre Mendonça</name>
@@ -112,7 +112,7 @@
 			</roles>
 			<timezone>+1</timezone>
 		</developer>
-	</developers>
+	</developers-->
 	<licenses>
 		<license>
 			<name>GNU_Affero_General_Public_License</name>
@@ -135,13 +135,13 @@
 
 	<distributionManagement>
 	    <repository>
-	      <id>mobicents-releases-repository</id>
-	      <name>Mobicents Releases Repository</name>
+	      <id>restcomm-releases-repository</id>
+	      <name>Restcomm Releases Repository</name>
 	      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
 	    </repository>
 	    <snapshotRepository>
-	      <id>mobicents-snapshots-repository</id>
-	      <name>Mobicents Snapshots Repository</name>
+	      <id>restcomm-snapshots-repository</id>
+	      <name>Restcomm Snapshots Repository</name>
 	      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
 	    </snapshotRepository>
 	  </distributionManagement>
@@ -386,8 +386,8 @@
 
 	<repositories>
 		<repository>
-                          <id>mobicents-public-repository-group</id>
-                          <name>Mobicens Public Maven Repository Group</name>
+                          <id>restcomm-public-repository-group</id>
+                          <name>Restcommm Public Maven Repository Group</name>
                           <url>https://oss.sonatype.org/content/groups/public</url>
                           <layout>default</layout>
                           <releases>
@@ -431,8 +431,8 @@
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
-                          <id>mobicents-public-repository-group</id>
-                          <name>Mobicens Public Maven Repository Group</name>
+                          <id>restcomm-public-repository-group</id>
+                          <name>Restcomm Public Maven Repository Group</name>
                           <url>https://oss.sonatype.org/content/groups/public</url>
                           <layout>default</layout>
                           <releases>
@@ -765,7 +765,7 @@
 			      <version>1.6.2</version>
 			      <extensions>true</extensions>
 			      <configuration>
-				<serverId>mobicents-releases-repository</serverId>
+				<serverId>restcomm-releases-repository</serverId>
 				<nexusUrl>https://oss.sonatype.org/</nexusUrl>
 			      </configuration>
 			      <executions>
