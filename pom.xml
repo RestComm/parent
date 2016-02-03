@@ -193,7 +193,8 @@
 		<manifest.implementation.vendor>TeleStax, Inc.</manifest.implementation.vendor>
 
 		<!-- default versions for restcomm maven plugins and other base restcomm APIs -->
-		<restcomm.slee.tools.mavenplugin.du.version>2.0.1.FINAL</restcomm.slee.tools.mavenplugin.du.version>
+		<!--<restcomm.slee.tools.mavenplugin.du.version>2.0.1.FINAL</restcomm.slee.tools.mavenplugin.du.version>-->
+		<restcomm.slee.tools.mavenplugin.du.version>3.0.4</restcomm.slee.tools.mavenplugin.du.version>
 		<restcomm.slee.tools.mavenplugin.library.version>1.0.0.FINAL</restcomm.slee.tools.mavenplugin.library.version>
 		<restcomm.tools.mavenplugin.eclipse.version>1.0.1.FINAL</restcomm.tools.mavenplugin.eclipse.version>
 		<restcomm.slee.api.extensions.version>1.0.0.FINAL</restcomm.slee.api.extensions.version>
