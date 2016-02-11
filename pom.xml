@@ -791,9 +791,9 @@
 	</build>
 
 	 <scm>
-                <connection>scm:git:https://code.google.com/p/commscale/</connection>
-                <developerConnection>scm:git:https://code.google.com/p/commscale/</developerConnection>
-                <url>https://code.google.com/p/commscale/</url>
-        </scm>
+        <connection>scm:git:https://github.com/RestComm/parent.git</connection>
+		<developerConnection>scm:git:git@github.com:RestComm/parent.git</developerConnection>
+		<url>https://github.com/RestComm/parent</url>
+	</scm>
 
 </project>
