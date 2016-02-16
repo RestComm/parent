@@ -253,7 +253,7 @@
 				<version>${jain-slee.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.restcomm.servers.jainslee.api</groupId>
+				<groupId>org.mobicents.servers.jainslee.api</groupId>
 				<artifactId>jain-slee-11-ext</artifactId>
 				<version>${restcomm.slee.api.extensions.version}</version>
 			</dependency>
