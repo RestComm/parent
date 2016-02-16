@@ -197,7 +197,6 @@
 		<restcomm.slee.tools.mavenplugin.du.version>3.0.13</restcomm.slee.tools.mavenplugin.du.version>
 		<restcomm.slee.tools.mavenplugin.library.version>1.0.0.FINAL</restcomm.slee.tools.mavenplugin.library.version>
 		<restcomm.tools.mavenplugin.eclipse.version>1.0.1.FINAL</restcomm.tools.mavenplugin.eclipse.version>
-		<restcomm.slee.api.extensions.version>1.0.0.FINAL</restcomm.slee.api.extensions.version>
 		
 		<license.year>2011</license.year>
 	</properties>
@@ -251,11 +250,6 @@
 				<groupId>javax.slee</groupId>
 				<artifactId>jain-slee</artifactId>
 				<version>${jain-slee.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.mobicents.servers.jainslee.api</groupId>
-				<artifactId>jain-slee-11-ext</artifactId>
-				<version>${restcomm.slee.api.extensions.version}</version>
 			</dependency>
 			
 			<dependency>
