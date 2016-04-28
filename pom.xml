@@ -405,6 +405,7 @@
 				<updatePolicy>never</updatePolicy>
 			</snapshots>
 		</repository>
+		<!--
 		<repository>
 			<id>jboss-deprecated-repository</id>
 			<name>JBoss Deprecated Maven Repository</name>
@@ -420,6 +421,7 @@
 				<updatePolicy>never</updatePolicy>
 			</snapshots>
 		</repository>
+		-->
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
