@@ -619,6 +619,7 @@
 			        <configuration>
 			          <nohelp>true</nohelp>
 				  <useStandardDocletOptions>false</useStandardDocletOptions>
+				  <failOnError>false</failOnError>
 			        </configuration>
 		            <executions>
 		              <execution>
