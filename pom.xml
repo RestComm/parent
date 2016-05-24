@@ -618,6 +618,7 @@
 			        <version>2.7</version>
 			        <configuration>
 			          <nohelp>true</nohelp>
+				  <useStandardDocletOptions>false</useStandardDocletOptions>
 			        </configuration>
 		            <executions>
 		              <execution>
