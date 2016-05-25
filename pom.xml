@@ -570,6 +570,8 @@
 			        <version>2.7</version>
 			        <configuration>
 			          <nohelp>true</nohelp>
+				  <useStandardDocletOptions>false</useStandardDocletOptions>
+				  <failOnError>false</failOnError>
 			        </configuration>
 		            <executions>
 		              <execution>
@@ -708,7 +710,7 @@
 			<plugin>
 			      <groupId>org.sonatype.plugins</groupId>
 			      <artifactId>nexus-staging-maven-plugin</artifactId>
-			      <version>1.6.2</version>
+			      <version>1.6.7</version>
 			      <extensions>true</extensions>
 			      <configuration>
 				<serverId>restcomm-releases-repository</serverId>
