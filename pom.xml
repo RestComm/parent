@@ -4,7 +4,7 @@
 
 	<groupId>org.restcomm</groupId>
 	<artifactId>restcomm-parent</artifactId>
-	<version>3.0.0-SNAPSHOT</version>
+	<version>3.0.5</version>
 
 	<name>RestComm :: Parent :: Restcomm</name>
 	<description>RestComm :: Parent pom</description>
