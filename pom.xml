@@ -194,11 +194,13 @@
 				<artifactId>jain-slee</artifactId>
 				<version>${jain-slee.version}</version>
 			</dependency>
+			<!--
 			<dependency>
 				<groupId>org.mobicents.servers.jainslee.api</groupId>
 				<artifactId>jain-slee-11-ext</artifactId>
 				<version>${restcomm.slee.api.extensions.version}</version>
 			</dependency>
+			-->
 			
 			<dependency>
 				<groupId>ant</groupId>
