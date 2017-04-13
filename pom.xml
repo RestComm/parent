@@ -139,7 +139,10 @@
 		<manifest.implementation.vendor>TeleStax, Inc.</manifest.implementation.vendor>
 
 		<!-- default versions for restcomm maven plugins and other base restcomm APIs -->
+		<restcomm.slee.tools.mavenplugin.du.version>4.0.2</restcomm.slee.tools.mavenplugin.du.version>
+		<restcomm.slee.tools.mavenplugin.library.version>1.0.0.FINAL</restcomm.slee.tools.mavenplugin.library.version>
 		<restcomm.tools.mavenplugin.eclipse.version>1.0.1.FINAL</restcomm.tools.mavenplugin.eclipse.version>
+
 		
 		<license.year>2016</license.year>
 	</properties>
@@ -656,9 +659,19 @@
 				</plugin>
 				<plugin>
 					<groupId>org.mobicents.tools</groupId>
+					<artifactId>maven-du-plugin</artifactId>
+					<version>${restcomm.slee.tools.mavenplugin.du.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.mobicents.tools</groupId>
 					<artifactId>maven-eclipse-plugin</artifactId>
 					<version>${restcomm.tools.mavenplugin.eclipse.version}</version>
 					<extensions>true</extensions>
+				</plugin>
+				<plugin>
+					<groupId>org.mobicents.tools</groupId>
+					<artifactId>maven-library-plugin</artifactId>
+					<version>${restcomm.slee.tools.mavenplugin.library.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.jboss.maven.plugins</groupId>
